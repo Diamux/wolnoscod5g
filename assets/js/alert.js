@@ -1,0 +1,1 @@
+alert("Uwaga! Strona mówi samą prawdę! Czytasz na własną odpowiedzialność!");
