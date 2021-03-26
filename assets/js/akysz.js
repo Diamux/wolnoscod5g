@@ -1,4 +1,3 @@
-var rng = Math.random();
 var d = Math.random();
 if (d < 0.1) {
 function IE(e) {
