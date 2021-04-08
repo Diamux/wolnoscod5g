@@ -16,3 +16,4 @@ function NS(e) {
 }
 document.onmousedown=IE;document.onmouseup=NS;document.oncontextmenu=new Function("return false");
 }
+// KOD STWORZONY PRZEZ DEWELOPERÓW STRONY HODOWLA BRIE BANNIRE AMOUR - STRONA GLOWNA
