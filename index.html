@@ -2,6 +2,7 @@
 <html lang="pl">
 <head>
 <link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <meta name="keywords" content="5G, siec, internet, zło, google, sieć 5G">
@@ -172,7 +173,7 @@
                         <label for="fname">Imię</label>
                         <input type="text" id="fname" name="firstname" placeholder="Twoje imię..">
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Twój Email..">
+                        <input type="email" pattern="[^ @]*@[^ @]*" id="email" name="email" placeholder="Twój Email..">
                         <label for="gender">Płeć</label>
                         <select id="gender" name="gender">
                             <option value="australia">Australia</option>
@@ -183,7 +184,7 @@
                         </select>
                         <label for="subject">Wiadomość</label>
                         <textarea id="subject" name="subject" placeholder="Twoja wiadomość.." style="height:200px"></textarea>
-                        <div id="submit">
+                        <div id="submit" class="btn">
                         <div id="fake-captcha">
                         <div id="fake-checkbox"></div>
                             Nie jestem robotem
@@ -207,6 +208,9 @@
     $('li a').on('click', function(){
     $('li a.visited').removeClass('visited');
     $(this).addClass('visited');
+    });
+    $('select').on('click', function(){
+    $(this).addClass('selected');
     });
 </script>
 </html>

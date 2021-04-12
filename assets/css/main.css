@@ -1,6 +1,9 @@
+* {
+    box-sizing: border-box;
+}
 body, html {
     font-family: 'Poppins', sans-serif;
-    scroll-padding: 50px 0px 0px 50px;
+    scroll-padding: 60px 0px 0px 50px;
     scroll-behavior: smooth;
     background: #070707;
     color: white;
@@ -16,15 +19,14 @@ br {
     display: none;
 }
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 13px;
+    height: 13px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #070707;
-    border-radius: 10px;
+    background-color: #121212;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #dfdfdf;
+    background-color: #c54118;
 }
 .container {
     left: 0; 
@@ -206,6 +208,10 @@ li a {
     text-decoration: none;
     transition: 0.3s;
 }
+li a.visited font {
+    transition: 0.3s;
+    color: white;
+}
 li a:hover {
     background-color: #c54118;
 }
@@ -270,32 +276,7 @@ img {
 }
 #menu {
     float: right;
-}
-/* mobile */
-@media screen and (max-width: 805px) {
-    #menu, li {
-        float: none;
-    }
-    .naglowek {
-        position: relative;
-    }
-    .wywiad {
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%
-    }
-    .kontakt {
-        width: 75%;
-    }
-    .selected {
-        display: none;
-    }
-    li:hover {
-        font-size: 25px;
-    }
-    .wrapper {
-        display: inline;
-    }
+    border-left: 1px dotted #757575;
 }
 /* we do a little trolling */
 #fake-captcha {
@@ -364,7 +345,7 @@ img {
     100% { color: #000000}
 }
 /* kontakt */
-input[type=text], select, textarea {
+input[type=text],input[type=email], select, textarea {
     color: white;
     width: 100%;
     padding: 12px;
@@ -396,6 +377,10 @@ input[type=submit]:hover {
 }
 select {
     color: #757575;
+    transition: 0.3s;
+}
+.selected {
+    color: white;
 }
 .kontakt {
     color: #757575;
@@ -411,7 +396,7 @@ select {
 }
 #submit {
     position: relative;
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     transition: 0.3s;

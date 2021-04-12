@@ -1,0 +1,66 @@
+@media screen and (max-width: 1362px) {
+    li a, li {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    li a, li {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1140px) {
+    li a, li {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1026px) {
+    li a, li {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 915px) {
+    li a, li {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 805px) {
+    li a, li {
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #menu, li {
+        float: none;
+    }
+    li a {
+        padding: 10px;
+        font-size: 20px !important;
+    }
+    .naglowek {
+        position: relative;
+    }
+    .wywiad {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%
+    }
+    .kontakt {
+        width: 75%;
+    }
+    .visited {
+        display: none;
+    }
+    li:hover {
+        font-size: 25px;
+    }
+    .wrapper {
+        display: inline;
+    }
+    #submit {
+        width: 70%;
+        font-size: 10px;
+    }
+    .kontakt {
+        width: 90%;
+    }
+}
