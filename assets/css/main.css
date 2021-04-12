@@ -15,6 +15,17 @@ body, html {
 br {
     display: none;
 }
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #070707;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #dfdfdf;
+}
 .container {
     left: 0; 
     right: 0; 
@@ -196,9 +207,9 @@ li a {
     transition: 0.3s;
 }
 li a:hover {
-    background-color: #c54118;;
+    background-color: #c54118;
 }
-.selected {
+.visited {
     background-color: #c54118;
     cursor: default;
 }

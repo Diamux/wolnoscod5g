@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="keywords" content="5G, siec, internet, zło, google, sieć 5G">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
@@ -29,8 +28,6 @@
     <meta property="og:image" content="https://wolnoscod5g.pl/images/5g.jpg">
     <meta property="og:locale" content="pl_PL" />
     <title>5G to istne zło!</title>
-    <script src="assets/js/godzina.js"></script>
-    <script src="assets/js/navbar.js"></script>
 </head>
 <body onload="startTime()">
     <div class="naglowek">
@@ -42,7 +39,7 @@
             <li><a href="#zeznania">Zeznania ofiar <font color="red">5G</font></a></li>
             <li><a href="#nepal">Tajna fabryka szczepionek w Nepalu</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
-            <li id="menu"><a class="selected" href="#index">Menu</a></li>
+            <li id="menu"><a class="visited" href="#index">Menu</a></li>
         </ul>
         </div>
     </div>
@@ -65,17 +62,17 @@
     </noscript>
     <div class="container" id="index">
         <div class="content"><br>
-                <h1 style="text-align: center;">Witaj, na oficjalniej stronie wolnoscod5g.pl gdzie udowodnimy wszelakimi sposobami, że sieć <font color="red">5G</font> to zło najwszelsze, które próbuje wyeliminować mądrych ludzi i zarządzać tymi mniej inteligentnymi.</h1>
-                <video controls style="width: 75%; border-radius: 15px;">
-                    <source style="width: 100%; border-radius: 15px;" src="images/bill_gate.mp4" type="video/mp4">
-                    Twoja przeglądarka nie wspiera formatu mp4
-                </video>
-                <img src="images/logo.gif" style="width: 75%; display: inline;">
-                <h2>5G MIND CONTROL</h2>
-                    <img style="width: 20%;" src="images/uwaga.gif">
-                    <img style="width: 50%;" src="images/shit.gif" title="Dowody na to że shitdows to G*WNO">
-                    <h1>Strona zawiera samą PRAWDĘ!</h1>
-                    <img style="width: 75%" src="images/5gbad.jpg">
+            <h1 style="text-align: center;">Witaj, na oficjalniej stronie wolnoscod5g.pl gdzie udowodnimy wszelakimi sposobami, że sieć <font color="red">5G</font> to zło najwszelsze, które próbuje wyeliminować mądrych ludzi i zarządzać tymi mniej inteligentnymi.</h1>
+            <video controls style="width: 75%; border-radius: 15px;">
+                <source style="width: 100%; border-radius: 15px;" src="images/bill_gate.mp4" type="video/mp4">
+                Twoja przeglądarka nie wspiera formatu mp4
+            </video>
+            <img src="images/logo.gif" style="width: 75%; display: inline;">
+            <h2>5G MIND CONTROL</h2>
+            <img style="width: 20%;" src="images/uwaga.gif">
+            <img style="width: 50%;" src="images/shit.gif" title="Dowody na to że shitdows to G*WNO">
+            <h1>Strona zawiera samą PRAWDĘ!</h1>
+            <img style="width: 75%" src="images/5gbad.jpg">
             <div id="bill">
                 <h2 class="#bill">Kim jest <font color="red">Bill Gates</font>?</h2>
 			    <article>
@@ -201,6 +198,15 @@
             </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/godzina.js"></script>
+<script src="assets/js/navbar.js"></script>
 <script src="assets/js/captcha.js"></script>
 <script src="assets/js/akysz.js"></script>
+<script>
+    $('li a').on('click', function(){
+    $('li a.visited').removeClass('visited');
+    $(this).addClass('visited');
+    });
+</script>
 </html>
