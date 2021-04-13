@@ -29,8 +29,14 @@
     }
 }
 @media screen and (max-width: 500px) {
-    #menu, li {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    li {
         float: none;
+    }
+    #menu {
+        display: none;
     }
     li a {
         padding: 10px;
@@ -46,9 +52,6 @@
     }
     .kontakt {
         width: 75%;
-    }
-    .visited {
-        display: none;
     }
     li:hover {
         font-size: 25px;

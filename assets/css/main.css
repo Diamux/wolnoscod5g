@@ -212,9 +212,16 @@ li a.visited font {
     transition: 0.3s;
     color: white;
 }
+font {
+    transition: 0.3s;
+}
+li a:hover font{
+    color: white;
+}
 li a:hover {
     background-color: #c54118;
 }
+
 .visited {
     background-color: #c54118;
     cursor: default;
