@@ -1,0 +1,251 @@
+body, html {
+    background-color: rgb(49, 33, 33);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    scroll-padding: 50px 0px 0px 50px;  
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    /* overflow: hidden; */
+    overflow: auto;
+    cursor: default;
+}
+.container {
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    top: 0px; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/* nie wiem jak to wyrównać */
+.wywiad {
+    border: 3px outset red;
+    background-color: rgb(136, 14, 14);
+    margin: 3%;
+    padding: 3%;
+    height: auto;
+}
+#secret {
+    display: none;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 50px;
+    width: 75%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+}
+.naglowek {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-size: 18px;
+    background-color: rgb(32, 30, 30);
+}
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    clear: both;
+    position: relative;
+}
+/* To jest naprawde zjebane */
+.content {
+    margin-left: auto;
+    margin-right: auto;
+}
+article {
+    width: 75%;
+    font-size: 25px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+h1, h2 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+li {
+    float: left;
+    border-right: 1px dotted #bbb;
+}
+li:last-child{
+    border-right: none;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+#menu {
+    background-color: #4CAF50;
+    float: right
+}
+img {
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* we do a little trolling */
+#fake-captcha {
+    font-size: 20px;
+    text-align: center;
+    line-height: 4.25vw;
+    white-space: nowrap;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+#fake-captcha:hover {
+    color: rgb(255, 255, 255);
+}
+#fake-checkbox {
+    position: relative;
+    float: left;
+    margin-right: 1vw;
+    width: 4vw;
+    height: 4vw;
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    border-radius: 5px;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+#fake-checkbox:hover {
+    border-color: #aaa;
+    background: #aaa;
+}
+#fake-captcha.loading {
+    cursor: default;
+    color: rgb(255, 255, 255);
+}
+.loading #fake-checkbox {
+    border-radius: 50%;
+    background: transparent;
+    border-color: #888;
+    border-width: 12px;
+    border-style: inset;
+    animation: spin 1s infinite linear;
+}
+.pass #fake-checkbox {
+    background: #c1d9a3;
+    border-color: #669f56;
+}
+.pass #fake-checkbox:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "\2713";
+    color: #275f18;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.fail {
+    transition: 0.3s;
+    animation: fail 0.3s 3;
+} 
+@keyframes fail {
+    0% { color: #757575}
+    100% { color: #000000}
+}
+/* kontakt */
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    transition: 0.3s;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #4fa351;
+}
+.kontakt {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+#submit {
+    position: relative;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: #4CAF50;
+}

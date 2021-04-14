@@ -57,8 +57,12 @@ br {
     -webkit-box-shadow: 0px 8px 35px 2px #0000008a;
     -moz-box-shadow: 0px 8px 35px 2px #0000008a;
 }
+#secret {
+    color: #171717;
+    cursor: default;
+}
 a {
-    color: inherit; 
+    color: inherit;
 }
 .alert {
     transition: opacity 0.5s ease-in-out;
@@ -233,6 +237,7 @@ li a:hover {
     width: 50%;
 }
 img {
+    margin: 50px;
     border-radius: 30px;
     width:100%;
     margin-left: auto;

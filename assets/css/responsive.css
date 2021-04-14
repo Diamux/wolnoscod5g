@@ -29,6 +29,9 @@
     }
 }
 @media screen and (max-width: 500px) {
+    html, body {
+        scroll-padding: 0px 0px 0px 0px;
+    }
     ::-webkit-scrollbar {
         display: none;
     }
