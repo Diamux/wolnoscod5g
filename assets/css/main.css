@@ -146,20 +146,12 @@ h1 {
 #footer:hover, #footer2:hover {
     font-size: 20px;
 }
-#footerdd {
-    background-color: black;
-    bottom: 0;
-    left: 0;
-    padding: 15px;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-}
 #content {
     display: grid;
     font-size: 20px;
     font-weight: 100;
     grid-gap: 20px;
+    grid-template-column: repeat(2, 1fr);
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -170,6 +162,7 @@ article {
     font-size: 25px;
     font-weight: 200;
     grid-gap: 20px;
+    grid-template-column: repeat(2, 1fr);
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -234,11 +227,11 @@ li a:hover {
     width: 50%;
 }
 img {
+    margin: 50px;
     border-radius: 30px;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
-    margin: 50px;
-    width:100%;
 }
 .rainbow {
     /* Chrome, Safari, Opera */
@@ -249,7 +242,7 @@ img {
     animation: rainbow 5s infinite; 
 }
 /* Chrome, Safari, Opera */
-@keyframes rainbow {
+@-webkit-keyframes rainbow {
     0%{color: orange;}	
     10%{color: purple;}	
     20%{color: red;}
@@ -317,7 +310,7 @@ img {
     border-color: #aaa;
 }
 #fake-captcha.loading {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     cursor: default;
 }
 .loading #fake-checkbox {
@@ -345,8 +338,8 @@ img {
     100% { transform: rotate(360deg); }
 }
 .fail {
-    transition: 0.3s;
     animation: fail 0.3s 3;
+    transition: 0.3s;
 } 
 @keyframes fail {
     0% { color: #757575}

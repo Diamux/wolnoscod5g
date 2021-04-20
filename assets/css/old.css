@@ -1,31 +1,31 @@
 body, html {
-    /* overflow: hidden; */
-    background-color: rgb(49, 33, 33);
+    background-color: rgb(49, 33, 33) !important;
     color: white;
-    cursor: default;
     font-family: 'Courier New', Courier, monospace;
-    height: 100%; 
-    margin: 0; 
-    overflow: auto;
-    padding: 0; 
     scroll-padding: 50px 0px 0px 50px;  
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    /* overflow: hidden; */
+    overflow: auto;
+    cursor: default;
 }
 .container {
-    bottom: 0; 
     left: 0; 
+    right: 0; 
+    bottom: 0; 
+    top: 0px; 
     margin-left: auto;
     margin-right: auto;
-    right: 0; 
     text-align: center;
-    top: 0px; 
 }
 /* nie wiem jak to wyrównać */
 .wywiad {
-    background-color: rgb(136, 14, 14);
     border: 3px outset red;
-    height: auto;
+    background-color: rgb(136, 14, 14);
     margin: 3%;
     padding: 3%;
+    height: auto;
 }
 #secret {
     display: none;
@@ -33,46 +33,46 @@ body, html {
 .wrapper {
     display: grid;
     grid-gap: 50px;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
     width: 75%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
 }
 .alert {
+    padding: 20px;
     background-color: #f44336;
     color: white;
-    padding: 20px;
     text-align: center;
 }
 .closebtn {
+    margin-left: 15px;
     color: white;
-    cursor: pointer;
+    font-weight: bold;
     float: right;
     font-size: 22px;
-    font-weight: bold;
     line-height: 20px;
-    margin-left: 15px;
+    cursor: pointer;
 }
 .closebtn:hover {
     color: black;
 }
 .naglowek {
-    background-color: rgb(32, 30, 30);
-    font-size: 18px;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    font-size: 18px;
+    background-color: rgb(32, 30, 30);
 }
 #footer {
-    background-color: black;
-    bottom: 0;
-    clear: both;
-    color: white;
-    left: 0;
-    margin-top: 50px;
-    padding: 20px;
     position: fixed;
-    position: relative;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
     text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    clear: both;
+    position: relative;
 }
 /* To jest naprawde zjebane */
 .content {
@@ -80,41 +80,41 @@ body, html {
     margin-right: auto;
 }
 article {
-    display: grid;
+    width: 75%;
     font-size: 25px;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
-    width: 75%;
+    display: grid;
 }
 h1, h2 {
-    font-size: 40px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 40px;
     padding: 10px;
-    width: 75%;
 }
 ul {
     list-style-type: none;
     margin: 0;
-    overflow: hidden;
     padding: 0;
+    overflow: hidden;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
 }
 li {
-    border-right: 1px dotted #bbb;
     float: left;
+    border-right: 1px dotted #bbb;
 }
 li:last-child{
     border-right: none;
 }
 li a {
-    color: white;
     display: block;
-    padding: 14px 16px;
+    color: white;
     text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 li a:hover {
@@ -122,34 +122,12 @@ li a:hover {
 }
 #menu {
     background-color: #4CAF50;
-    float: right;
+    float: right
 }
 img {
+    margin: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin: 50px;
-}
-.rainbow {
-    /* Chrome, Safari, Opera */
-    -webkit-animation: rainbow 5s infinite; 
-    /* Internet Explorer */
-    -ms-animation: rainbow 5s infinite;
-    /* Standar Syntax */
-    animation: rainbow 5s infinite; 
-}
-/* Chrome, Safari, Opera */
-@-webkit-keyframes rainbow {
-    0%{color: orange;}	
-    10%{color: purple;}	
-    20%{color: red;}
-    30%{color: CadetBlue;}
-    40%{color: yellow;}
-    50%{color: coral;}
-    60%{color: green;}
-    70%{color: cyan;}
-    80%{color: DeepPink;}
-    90%{color: DodgerBlue;}
-    100%{color: orange;}
 }
 .center {
     display: block;
@@ -158,57 +136,57 @@ img {
 }
 /* we do a little trolling */
 #fake-captcha {
-    color: rgb(255, 255, 255);
-    cursor: pointer;
     font-size: 20px;
-    line-height: 4.25vw;
     text-align: center;
+    line-height: 4.25vw;
     white-space: nowrap;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
 }
 #fake-captcha:hover {
     color: rgb(255, 255, 255);
 }
 #fake-checkbox {
+    position: relative;
+    float: left;
+    margin-right: 1vw;
+    width: 4vw;
+    height: 4vw;
+    border: 2px solid #ffffff;
     background: #ffffff;
     border-radius: 5px;
-    border: 2px solid #ffffff;
-    box-sizing: border-box;
-    float: left;
-    height: 4vw;
-    margin-bottom: 1px;
-    margin-right: 1vw;
-    margin-top: 1px;
-    position: relative;
     transition: all 0.2s;
-    width: 4vw;
+    box-sizing: border-box;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 #fake-checkbox:hover {
-    background: #aaa;
     border-color: #aaa;
+    background: #aaa;
 }
 #fake-captcha.loading {
-    color: rgb(255, 255, 255);
     cursor: default;
+    color: rgb(255, 255, 255);
 }
 .loading #fake-checkbox {
-    animation: spin 1s infinite linear;
+    border-radius: 50%;
     background: transparent;
     border-color: #888;
-    border-radius: 50%;
-    border-style: inset;
     border-width: 12px;
+    border-style: inset;
+    animation: spin 1s infinite linear;
 }
 .pass #fake-checkbox {
     background: #c1d9a3;
     border-color: #669f56;
 }
 .pass #fake-checkbox:before {
-    color: #275f18;
-    content: "\2713";
-    display: block;
-    left: 0;
     position: absolute;
     top: 0;
+    left: 0;
+    display: block;
+    content: "\2713";
+    color: #275f18;
 }
 @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -224,47 +202,47 @@ img {
 }
 /* kontakt */
 input[type=text],input[type=email], select, textarea {
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin-bottom: 16px;
-    margin-top: 6px;
-    padding: 12px;
-    resize: vertical;
     width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 input[type=submit] {
-    background-color: #4CAF50;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 12px 20px;
     transition: 0.3s;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 input[type=submit]:hover {
     background-color: #4fa351;
 }
 .kontakt {
-    background-color: #f2f2f2;
-    border-radius: 5px;
     color: black;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
     width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 #submit {
-    background-color: #4CAF50;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 12px 20px;
     position: relative;
     width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 #submit:hover {
     background-color: #4CAF50;
