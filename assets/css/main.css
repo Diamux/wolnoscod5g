@@ -50,11 +50,11 @@ br {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-  @-webkit-keyframes loaded {
+@-webkit-keyframes loaded {
     from { bottom:-100px; opacity:0 } 
     to { bottom:0px; opacity:1 }
 }
-  @keyframes loaded { 
+@keyframes loaded { 
     from{ bottom:-100px; opacity:0 } 
     to{ bottom:0; opacity:1 }
 }
@@ -132,7 +132,8 @@ a {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     text-align: center;
-    top: 0;  
+    top: 0;
+    z-index: 100;
 }
 h2 {
     font-size: 50px;
