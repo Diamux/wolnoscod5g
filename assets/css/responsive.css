@@ -7,6 +7,9 @@
     li a, li {
         font-size: 16px;
     }
+    .content {
+		width: 100%;
+	}
 }
 @media screen and (max-width: 1140px) {
     li a, li {
@@ -28,10 +31,13 @@
         font-size: 8px;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     html, body {
         scroll-padding: 0px 0px 0px 0px;
     }
+	.content {
+		width: 100%;
+	}
     ::-webkit-scrollbar {
         display: none;
     }

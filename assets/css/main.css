@@ -150,6 +150,7 @@ a {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     text-align: center;
+    font-weight: 500;
     top: 0;
     z-index: 100;
 }
@@ -199,23 +200,17 @@ h1 {
 #footer:hover, #footer2:hover {
     font-size: 20px;
 }
-#content {
-    display: grid;
-    font-size: 20px;
-    font-weight: 100;
-    grid-gap: 20px;
-    grid-template-column: repeat(2, 1fr);
+.content {
+    transition: 0.3s;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
-    width: 75%;
 }
 article {
     display: grid;
     font-size: 25px;
-    font-weight: 200;
+    font-weight: 300;
     grid-gap: 20px;
-    grid-template-column: repeat(2, 1fr);
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -254,6 +249,9 @@ li a {
     text-align: center;
     text-decoration: none;
     transition: 0.3s;
+}
+li a font {
+    font-weight: 600;
 }
 li a.visited font {
     color: white;
@@ -462,7 +460,7 @@ select {
     padding: 12px 20px;
     position: relative;
     transition: 0.3s;
-    width: 50%;
+    width: 75%;
 }
 #submit:hover {
     background-color: #e4410f;
