@@ -32,25 +32,20 @@
 </head>
 <body onload="loader()">
     <noscript>
-        <img src="images/nojavascript.gif" alt="Włącz obsługę javascript w swojej przeglądarce.">
         <style type="text/css">
-            .container, .naglowek, #footer, #loader {
-                display: none;
+            .alert, #index {
+                display: block !important;
             }
-            img {
-                border-radius: 0;
-                height: 597px;
-                left: 50%;
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                width: 427px;
+            #kontakt, #loader, #nojs, #secret {
+                display: none;
             }
         </style>
     </noscript>
 <div id="loader"></div>
 <div id="index" style="display: none;">
+    <div class="alert" style="display: none;">
+        <strong>WolnoscOd5G</strong> działa najlepiej z włączoną obsługą JavaScript.
+    </div>
     <div class="naglowek">
         <div class="topnav">
         <ul>
@@ -59,7 +54,7 @@
             <li><a href="#6g">O <font class="rainbow">6G</font> Broń Nuklearna</a></li>
             <li><a href="#zeznania">Zeznania ofiar <font color="red">5G</font></a></li>
             <li><a href="#nepal">Tajna fabryka szczepionek w Nepalu</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#kontakt" id="nojs">Kontakt</a></li>
             <li id="menu"><a class="visited" href="#index">Menu</a></li>
         </ul>
         </div>
@@ -196,9 +191,9 @@
                 </div>
             </div>
         </div>
-            <div id="footer">
-                &copy; Wszelkie Prawa Zastrzeżone
-            </div>
+        <div id="footer">
+            &copy; Wszelkie Prawa Zastrzeżone
+        </div>
     </div>
 </div>
 <script src="assets/js/akysz.js"></script>

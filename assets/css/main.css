@@ -117,33 +117,28 @@ a {
     color: inherit;
 }
 .alert {
-    background-color: #f44336;
-    font-size: 35px;
-    left: 50%;
-    padding: 35px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.5s ease-in-out;
+    background-color: #c54118;
+    color: white;
+    padding: 14px;
 }
 .closebtn {
-    cursor: pointer;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
     float: right;
     font-size: 22px;
-    font-weight: bold;
     line-height: 20px;
-    margin-left: 15px;
+    cursor: pointer;
     transition: 0.3s;
 }
 .closebtn:hover {
     color: black;
 }
 .naglowek {
-    -moz-box-shadow: 0px 8px 35px 2px #0000008a;
-    -webkit-box-shadow: 0px 8px 35px 2px #0000008a;
+    -moz-box-shadow: 0px 35px 35px -2px #0000008a;
+    -webkit-box-shadow: 0px 35px 35px -2px #0000008a;
+    box-shadow: 0 35px 35px -2px #0000008a;
     background-color: #121212;
-    box-shadow: 0px 8px 35px 2px #0000008a;
     font-size: 20px;
     opacity: 1;
     padding: auto;
